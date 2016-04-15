@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'existencelight';
+  src: url("../fonts/Existence Light/existence-light.eot");
+  src: url("../fonts/Existence Light/existence-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Existence Light/existence-light.woff2") format("woff2"), url("../fonts/Existence Light/existence-light.woff") format("woff"), url("../fonts/Existence Light/existence-light.ttf") format("truetype"), url("../fonts/Existence Light/existence-light.svg#existencelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'titilliumlight';
+  src: url("../fonts/Titillium/titillium-light-webfont.eot");
+  src: url("../fonts/Titillium/titillium-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Titillium/titillium-light-webfont.woff2") format("woff2"), url("../fonts/Titillium/titillium-light-webfont.woff") format("woff"), url("../fonts/Titillium/titillium-light-webfont.ttf") format("truetype"), url("../fonts/Titillium/titillium-light-webfont.svg#titilliumlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/Lato/lato-regular.eot");
+  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -231,9 +255,72 @@ input[type=button] {
   clear: both;
 }
 
-.grid-container {
+.cls-1, .cls-2, .cls-3 {
+  fill: #fff;
+}
+
+.cls-1 {
+  fill-opacity: 0.1;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+}
+
+.cls-1, .cls-2 {
+  fill-rule: evenodd;
+}
+
+.cls-3 {
+  font-size: 18px;
+  text-anchor: middle;
+  font-family: 'latoregular';
+}
+
+header {
   width: 100%;
-  max-width: 1400px;
+  background-image: url("../images/headerfoto.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: 'existencelight', sans-serif;
+}
+
+header .grid-container .header-title {
+  margin: 0 auto;
+}
+
+header .grid-container .header-title h1 {
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+header .grid-container .header-title h1 span {
+  color: #9F449B;
+}
+
+header .grid-container .header-title h4 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+header .grid-container .header-title p {
+  margin-top: 15px;
+}
+
+header .grid-container .header-menu-arrow {
+  margin: 0 auto;
+}
+
+header .grid-container .header-menu-arrow .col-1 {
+  margin: 0 auto;
+}
+
+.small-hex svg {
+  width: 10%;
+}
+
+.grid-container {
+  max-width: 1170px;
   margin: 0 auto;
 }
 

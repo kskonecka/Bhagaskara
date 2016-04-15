@@ -2,8 +2,7 @@ $columns_amount: 12;
 $width: (100% / $columns_amount);
 
 .grid-container {
-  width: 100%;
-  max-width: 1400px;
+  max-width: 1170px;
   margin: 0 auto;
 
   .row::after, .row::before {

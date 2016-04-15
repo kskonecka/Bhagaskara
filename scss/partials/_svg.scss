@@ -1,0 +1,20 @@
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-opacity: 0.1;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+      
+      .cls-3 {
+        font-size: 18px;
+        text-anchor: middle;
+        font-family: 'latoregular';
+      }
