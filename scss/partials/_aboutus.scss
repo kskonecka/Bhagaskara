@@ -1,0 +1,43 @@
+.about-us {
+  .about-us-title {
+    h1 {
+    text-align: center;
+    font-size: $h1-font-size;
+    }
+  }
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .about-us-img {
+      width: 50%;
+    }
+    .about-us-right {
+      width: 50%;
+      margin-left: 30px; //to jest to miedzy columnami
+      .about-us-text{
+        float: right;
+        line-height: 2rem;
+        font-size: 0.8rem;
+      }
+      .about-us-button {
+        margin-top: 20px;
+        a {//czy link ma byc responsywny? niejest i glupio to wyglada
+          padding: 15px 25px;
+          background-color: $select-color;
+          color: white;
+          text-decoration: none;
+          text-align:center;
+          line-height:70px;
+          border-radius: 5px;
+          -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
+          -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
+          box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
+        }
+      }
+    }
+  }
+}
+//tu bym wolala zrobic tak zeby
+//prawa strona zmniejszala sie tak samo jak lewa

@@ -377,6 +377,50 @@ nav .grid-container .nav .nav-menu ul li span {
   font-size: 1.2rem;
 }
 
+.about-us .about-us-title h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about-us .about-us-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about-us .about-us-content .about-us-img {
+  width: 50%;
+}
+
+.about-us .about-us-content .about-us-right {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.about-us .about-us-content .about-us-right .about-us-text {
+  float: right;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+
+.about-us .about-us-content .about-us-right .about-us-button {
+  margin-top: 20px;
+}
+
+.about-us .about-us-content .about-us-right .about-us-button a {
+  padding: 15px 25px;
+  background-color: #9F449B;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
 .bottom {
   height: 300px;
 }
