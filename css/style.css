@@ -366,6 +366,17 @@ nav .grid-container .nav .nav-menu ul li span {
   text-align: center;
 }
 
+.blue-background .grid-container .col-3 .col-8 {
+  float: none;
+  margin: 0 auto;
+}
+
+.blue-background .grid-container .col-3 .col-8 h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
 .bottom {
   height: 300px;
 }

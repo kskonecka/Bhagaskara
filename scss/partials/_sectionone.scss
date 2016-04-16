@@ -2,5 +2,16 @@
   background-color: #EEEEEE;
   .grid-container {
     text-align: center;
+    .col-3 {
+      .col-8 {
+        float: none;
+        margin: 0 auto;
+        h2 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }
