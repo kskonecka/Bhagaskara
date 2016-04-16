@@ -276,6 +276,10 @@ input[type=button] {
   font-family: 'latoregular';
 }
 
+body {
+  font-family: 'existencelight', sans-serif;
+}
+
 header {
   width: 100%;
   background-image: url("../images/headerfoto.jpg");
@@ -317,6 +321,53 @@ header .grid-container .header-menu-arrow .col-1 {
 
 .small-hex svg {
   width: 10%;
+}
+
+.width-100 {
+  width: 100%;
+  background-color: white;
+}
+
+nav .grid-container {
+  padding: 20px 0 20px 0;
+}
+
+nav .grid-container .nav {
+  vertical-align: bottom;
+}
+
+nav .grid-container .nav .nav-logo {
+  font-size: 1.5em;
+}
+
+nav .grid-container .nav .nav-logo span {
+  color: #9F449B;
+}
+
+nav .grid-container .nav .nav-menu {
+  text-align: right;
+  margin-top: 10px;
+}
+
+nav .grid-container .nav .nav-menu ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+nav .grid-container .nav .nav-menu ul li span {
+  color: #9F449B;
+}
+
+.blue-background {
+  background-color: #EEEEEE;
+}
+
+.blue-background .grid-container {
+  text-align: center;
+}
+
+.bottom {
+  height: 300px;
 }
 
 .grid-container {
@@ -380,5 +431,9 @@ header .grid-container .header-menu-arrow .col-1 {
 }
 
 .grid-container .col-12 {
+  width: 100%;
+}
+
+.grid-container .width-100 {
   width: 100%;
 }

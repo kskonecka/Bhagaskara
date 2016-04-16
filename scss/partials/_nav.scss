@@ -1,0 +1,30 @@
+.width-100 {
+  width: 100%;
+  background-color: white;
+}
+
+nav .grid-container {
+  padding: 20px 0 20px 0;
+  .nav {
+    vertical-align: bottom;
+  .nav-logo {
+    font-size: 1.5em;
+    span {
+      color: $select-color;
+    }
+  }
+  .nav-menu {
+    text-align: right;
+    margin-top: 10px; //chyba jakos inaczej trzeba przesunac to menu
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 5px;
+        span {
+          color: $select-color;
+        }
+        }
+      }
+    }
+  }
+}
