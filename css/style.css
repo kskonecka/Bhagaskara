@@ -337,7 +337,7 @@ nav .grid-container .nav {
 }
 
 nav .grid-container .nav .nav-logo {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 nav .grid-container .nav .nav-logo span {
@@ -409,16 +409,16 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .about-us .about-us-content .about-us-right .about-us-button a {
-  padding: 15px 25px;
   background-color: #9F449B;
   color: white;
   text-decoration: none;
   text-align: center;
-  line-height: 70px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  line-height: 70px;
+  padding: 15px 25px;
 }
 
 .intersection {
@@ -433,8 +433,81 @@ nav .grid-container .nav .nav-menu ul li span {
   margin-top: 20px;
 }
 
-.bottom {
-  height: 300px;
+.form-section .col-12 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.form-section .col-12 span {
+  color: #9F449B;
+}
+
+.form-section form input[type=text], .form-section form input[type=email], .form-section form textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  line-height: 2rem;
+  text-indent: 7px;
+}
+
+.form-section form textarea {
+  height: 210px;
+}
+
+.form-section form input[type=submit] {
+  background-color: #9F449B;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  margin-left: 10px;
+  font-size: 0.75rem;
+}
+
+.form-section .col-6 .form-section-upper-text {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-family: Helvetica;
+}
+
+.form-section .col-6 .form-section-address {
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.form-section .col-6 ul {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-section input[type=submit] {
+  background-color: #9F449B;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  margin-left: 10px;
+  font-size: 0.75rem;
+}
+
+.form-section h4 {
+  font-size: 3rem;
+  margin-top: 150px;
+}
+
+.form-section h4 span {
+  color: #9F449B;
 }
 
 .grid-container {

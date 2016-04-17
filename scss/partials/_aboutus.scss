@@ -24,16 +24,9 @@
       .about-us-button {
         margin-top: 20px;
         a {//czy link ma byc responsywny? niejest i glupio to wyglada
-          padding: 15px 25px;
-          background-color: $select-color;
-          color: white;
-          text-decoration: none;
-          text-align:center;
+          @include button();
           line-height:70px;
-          border-radius: 5px;
-          -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
-          box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.75);
+          padding: 15px 25px;
         }
       }
     }

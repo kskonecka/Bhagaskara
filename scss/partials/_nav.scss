@@ -8,10 +8,7 @@ nav .grid-container {
   .nav {
     vertical-align: bottom;
   .nav-logo {
-    font-size: 1.5em;
-    span {
-      color: $select-color;
-    }
+    @include logo(1.5rem);
   }
   .nav-menu {
     text-align: right;

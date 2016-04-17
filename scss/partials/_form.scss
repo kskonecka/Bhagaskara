@@ -1,0 +1,55 @@
+.form-section {
+  .col-12 {
+    text-align: center;
+    font-size: $h1-font-size;
+    margin-bottom: 40px;
+    span {
+      color: $select-color;
+    }
+  }
+  form {
+    input[type=text], input[type=email], textarea {
+      width: 90%;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      line-height: 2rem;
+      text-indent: 7px;
+    }
+    textarea {
+      height: 210px;
+    }
+    input[type=submit] { //to chyba powinien byc link, bo submit sie od razu glupio styluje
+      @include button ();
+      padding: 15px 30px;
+      margin-left: 10px;
+      font-size: 0.75rem;
+   }
+  }
+  .col-6 {
+    .form-section-upper-text {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      font-family: Helvetica;
+    }
+    .form-section-address {
+      font-family: Helvetica;
+      font-weight: bold;
+    }
+    ul {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  input[type=submit] { //to chyba powinien byc link, bo submit sie od razu glupio styluje
+    @include button ();
+    padding: 15px 30px;
+    margin-left: 10px;
+    font-size: 0.75rem;
+ }
+ h4 {
+   @include logo(3rem);
+   margin-top: 150px;
+ }
+}
