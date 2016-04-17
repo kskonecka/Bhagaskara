@@ -1,0 +1,24 @@
+.our-team {
+  // border: 1px solid red;
+  text-align: center;
+  h1 {
+    @include title();
+    }
+      margin: 0 auto;
+    #arrow_left {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    .person { //tu chyba musi byc jednak obrazek okragly
+      // position: relative;
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+      padding-top: 100%;
+      background: silver;
+    }
+}

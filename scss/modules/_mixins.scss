@@ -15,3 +15,11 @@
       color: $select-color;
     }
 }
+
+@mixin title() {
+  text-align: center;
+  font-size: $h1-font-size;
+  span {
+    color: $select-color;
+  }
+}

@@ -18,3 +18,12 @@
         text-anchor: middle;
         font-family: 'latoregular';
       }
+
+      .cls-4 { //to jest ten select color
+          fill: #9f449b;
+          fill-opacity: 0;
+          stroke: #9f449b;
+          stroke-linejoin: round;
+          stroke-width: 5px;
+          fill-rule: evenodd;
+      }

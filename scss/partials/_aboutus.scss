@@ -1,9 +1,6 @@
 .about-us {
   .about-us-title {
-    h1 {
-    text-align: center;
-    font-size: $h1-font-size;
-    }
+    @include title();
   }
   .about-us-content {
     display: flex;

@@ -276,6 +276,15 @@ input[type=button] {
   font-family: 'latoregular';
 }
 
+.cls-4 {
+  fill: #9f449b;
+  fill-opacity: 0;
+  stroke: #9f449b;
+  stroke-linejoin: round;
+  stroke-width: 5px;
+  fill-rule: evenodd;
+}
+
 body {
   font-family: 'existencelight', sans-serif;
 }
@@ -377,9 +386,13 @@ nav .grid-container .nav .nav-menu ul li span {
   font-size: 1.2rem;
 }
 
-.about-us .about-us-title h1 {
+.about-us .about-us-title {
   text-align: center;
   font-size: 2.5rem;
+}
+
+.about-us .about-us-title span {
+  color: #9F449B;
 }
 
 .about-us .about-us-content {
@@ -431,6 +444,37 @@ nav .grid-container .nav .nav-menu ul li span {
 .intersection h1 {
   font-size: 2.5rem;
   margin-top: 20px;
+}
+
+.our-team {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.our-team h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.our-team h1 span {
+  color: #9F449B;
+}
+
+.our-team #arrow_left {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.our-team .person {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  background: silver;
 }
 
 .form-section .col-12 {
