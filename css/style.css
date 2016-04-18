@@ -540,6 +540,48 @@ nav .grid-container .nav .nav-menu ul li span {
   font-family: "titilliumlight";
 }
 
+.slider-section {
+  background-color: #EEEEEE;
+}
+
+.slider-section .slider-numbers {
+  padding-top: 50px;
+}
+
+.slider-section .slider-numbers p {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.slider-section .slider-numbers p span {
+  font-size: 3rem;
+}
+
+.slider-section .slider-quotes {
+  text-align: center;
+}
+
+.slider-section .slider-quotes .col-10 {
+  float: none;
+  margin: 0 auto;
+}
+
+.slider-section .slider-quotes img {
+  width: 25%;
+}
+
+.slider-section .slider-quotes .slider-name {
+  padding: 20px 0;
+}
+
+.slider-section .slider-quotes .slider-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 0.5px solid silver;
+}
+
 .form-section .col-12 {
   text-align: center;
   font-size: 2.5rem;

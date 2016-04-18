@@ -1,0 +1,33 @@
+.slider-section {
+  background-color: #EEEEEE;
+  .slider-numbers {
+    padding-top: 50px;
+    p {
+      text-align: center;
+      font-size: 0.75rem;
+      span {
+        font-size: 3rem;
+      }
+    }
+  }
+  .slider-quotes {
+    .col-10 {
+      float: none;
+      margin: 0 auto;
+     }
+     text-align: center;
+       img {
+         width: 25%;
+       }
+       .slider-name {
+         padding: 20px 0;
+       }
+       .slider-dot {
+         display: inline-block;
+         width: 6px;
+         height: 6px;
+         border-radius: 50%;
+         border:0.5px solid silver;
+       }
+    }
+}
