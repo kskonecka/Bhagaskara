@@ -10,15 +10,32 @@
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
     }
-    .person { //tu chyba musi byc jednak obrazek okragly
-      // position: relative;
-      border-radius: 50%;
-      width: 100%;
-      height: auto;
-      padding-top: 100%;
-      background: silver;
+    .people{
+      float: none;
+      margin: 0 auto;
+    .person {
+      float: none;
+      width: 70%;
+      margin: 0 auto;
+      font-family: $other-font-family;
+      color: #484848;
+      .name {
+        margin-top:85px;
+        // font-family: Helvetica;
+        // color: #484848;
+        font-weight: bolder;
+      }
+      .position {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+      }
+      .socialmedia {
+        img { //to sie ma tez rozciagac tak jak na dole?
+          width: 20%;
+        }
+      }
     }
+  }
 }
