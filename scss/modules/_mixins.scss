@@ -23,3 +23,21 @@
     color: $select-color;
   }
 }
+
+@mixin skill-panel () {
+  .panel-text {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: $other-font-family;
+      span {
+        font-weight: bolder;
+      }
+     }
+    }
+    .panel-box {
+     background-color: #F0f0f0;
+     height: 12px;
+     font-family: $other-font-family;
+   }
+  }

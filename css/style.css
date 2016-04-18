@@ -447,6 +447,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .our-team {
+  padding-bottom: 50px;
   text-align: center;
   margin: 0 auto;
 }
@@ -493,6 +494,50 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .our-team .people .person .socialmedia img {
   width: 20%;
+}
+
+.our-skills {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.our-skills h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.our-skills h1 span {
+  color: #9F449B;
+}
+
+.our-skills .our-skills-panel-top {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-skills .col-5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.our-skills .col-5 .panel-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-skills .col-5 .panel-text p {
+  font-family: "titilliumlight";
+}
+
+.our-skills .col-5 .panel-text p span {
+  font-weight: bolder;
+}
+
+.our-skills .col-5 .panel-box {
+  background-color: #F0f0f0;
+  height: 12px;
+  font-family: "titilliumlight";
 }
 
 .form-section .col-12 {

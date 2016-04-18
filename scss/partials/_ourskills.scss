@@ -1,0 +1,17 @@
+.our-skills {
+  text-align: center;
+  padding-bottom: 50px;
+  h1 {
+    @include title();
+    }
+  .our-skills-panel-top {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    }
+  .col-5 {
+      @include skill-panel;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+}
