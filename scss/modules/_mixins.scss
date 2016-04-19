@@ -17,6 +17,7 @@
 }
 
 @mixin title() {
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;

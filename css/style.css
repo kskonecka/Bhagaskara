@@ -285,6 +285,12 @@ input[type=button] {
   fill-rule: evenodd;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 body {
   font-family: 'existencelight', sans-serif;
 }
@@ -341,12 +347,18 @@ header .grid-container .header-menu-arrow .col-1 {
   background-color: white;
 }
 
+nav {
+  background-color: white;
+  z-index: 1;
+}
+
 nav .grid-container {
-  padding: 20px 0 20px 0;
+  height: 70px;
 }
 
 nav .grid-container .nav {
   vertical-align: bottom;
+  background-color: white;
 }
 
 nav .grid-container .nav .nav-logo {
@@ -359,7 +371,6 @@ nav .grid-container .nav .nav-logo span {
 
 nav .grid-container .nav .nav-menu {
   text-align: right;
-  margin-top: 10px;
 }
 
 nav .grid-container .nav .nav-menu ul li {
@@ -408,6 +419,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .about-us .about-us-title h1 {
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -503,6 +515,7 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .our-team h1 {
   padding-bottom: 5rem;
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -582,6 +595,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .our-skills h1 {
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -704,6 +718,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .our-portfolio h1 {
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -826,6 +841,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .form-section .col-12 h1 {
+  z-index: 0;
   display: inline-block;
   text-align: center;
   position: relative;
