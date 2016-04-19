@@ -1,0 +1,62 @@
+.our-portfolio {
+  max-width: 1220px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: -40px;
+  padding-top: 60px; //nie czy to ok
+  h1 {
+    @include title();
+  }
+}
+
+
+.portfolio-box {
+  font-family: $helvetica-font;
+  .portfolio-filter-icons {
+    text-align: center;
+    padding: 60px 0;
+    @for $i from 1 through 4 {
+      .portfolio-filter-icon-#{$i} {width: 84px;
+                                    height: 38px;
+                                    border: 1px solid $select-color;
+                                    display: inline-block;
+                                    border-radius: 5px;
+                                    padding-top: 10px}
+    }
+    div:hover {
+      background-color: $select-color;
+      color: white;
+    }
+  }
+  .portfolio-photos-top, .portfolio-photos-bottom {
+    div.col-4{
+      img {
+      // padding-left: 7px; tu jak ma byc przerwa miedzy tymi gridami to nie trzeba paddingu
+      }
+      p {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+          span {
+          opacity:0.75;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  .portfolio-watch-more {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    .portfolio-watch-more-button { //ten button jest responsywny
+      margin: 0 auto;
+      @include button();
+      // line-height:70px;
+      height: 50px;
+      width: 20%;
+      text-align: center;
+      padding-top: 15px;
+      //chyba rozmiar czcionki/czcionke trzeba zmienic
+    }
+  }
+}
+//84 x 38

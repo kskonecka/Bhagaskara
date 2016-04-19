@@ -388,7 +388,7 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .about-us .about-us-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .about-us .about-us-title span {
@@ -442,7 +442,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .intersection h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-top: 20px;
 }
 
@@ -454,7 +454,7 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .our-team h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .our-team h1 span {
@@ -503,7 +503,7 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .our-skills h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .our-skills h1 span {
@@ -574,7 +574,11 @@ nav .grid-container .nav .nav-menu ul li span {
   padding: 20px 0;
 }
 
-.slider-section .slider-quotes .slider-dot {
+.slider-section .slider-quotes .slider-dot-div {
+  padding-bottom: 80px;
+}
+
+.slider-section .slider-quotes .slider-dot-div .slider-dot {
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -582,9 +586,108 @@ nav .grid-container .nav .nav-menu ul li span {
   border: 0.5px solid silver;
 }
 
+.our-portfolio {
+  max-width: 1220px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: -40px;
+  padding-top: 60px;
+}
+
+.our-portfolio h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.our-portfolio h1 span {
+  color: #9F449B;
+}
+
+.portfolio-box {
+  font-family: Helvetica;
+}
+
+.portfolio-box .portfolio-filter-icons {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.portfolio-box .portfolio-filter-icons .portfolio-filter-icon-1 {
+  width: 84px;
+  height: 38px;
+  border: 1px solid #9F449B;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.portfolio-box .portfolio-filter-icons .portfolio-filter-icon-2 {
+  width: 84px;
+  height: 38px;
+  border: 1px solid #9F449B;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.portfolio-box .portfolio-filter-icons .portfolio-filter-icon-3 {
+  width: 84px;
+  height: 38px;
+  border: 1px solid #9F449B;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.portfolio-box .portfolio-filter-icons .portfolio-filter-icon-4 {
+  width: 84px;
+  height: 38px;
+  border: 1px solid #9F449B;
+  display: inline-block;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.portfolio-box .portfolio-filter-icons div:hover {
+  background-color: #9F449B;
+  color: white;
+}
+
+.portfolio-box .portfolio-photos-top div.col-4 p, .portfolio-box .portfolio-photos-bottom div.col-4 p {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio-box .portfolio-photos-top div.col-4 p span, .portfolio-box .portfolio-photos-bottom div.col-4 p span {
+  opacity: 0.75;
+  font-size: 0.75rem;
+}
+
+.portfolio-box .portfolio-watch-more {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.portfolio-box .portfolio-watch-more .portfolio-watch-more-button {
+  margin: 0 auto;
+  background-color: #9F449B;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 20%;
+  text-align: center;
+  padding-top: 15px;
+}
+
 .form-section .col-12 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 40px;
 }
 
