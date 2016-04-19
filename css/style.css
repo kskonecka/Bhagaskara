@@ -298,6 +298,10 @@ header {
   font-family: 'existencelight', sans-serif;
 }
 
+header .grid-container {
+  padding-bottom: 3rem;
+}
+
 header .grid-container .header-title {
   margin: 0 auto;
 }
@@ -373,6 +377,8 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .blue-background .grid-container {
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .blue-background .grid-container .col-3 .col-8 {
@@ -386,13 +392,54 @@ nav .grid-container .nav .nav-menu ul li span {
   font-size: 1.2rem;
 }
 
+.blue-background .grid-container .col-3 .col-8 p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+.about-us {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
 .about-us .about-us-title {
   text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-us .about-us-title h1 {
+  display: inline-block;
+  text-align: center;
+  position: relative;
   font-size: 4rem;
 }
 
-.about-us .about-us-title span {
+.about-us .about-us-title h1 span {
   color: #9F449B;
+}
+
+.about-us .about-us-title h1:before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #9F449B;
+  border-left: 1px solid #9F449B;
+  display: block;
+  left: -20px;
+  top: 80px;
+}
+
+.about-us .about-us-title h1:after {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #9F449B;
+  border-right: 1px solid #9F449B;
+  display: block;
+  left: 245px;
+  top: -80px;
 }
 
 .about-us .about-us-content {
@@ -439,6 +486,8 @@ nav .grid-container .nav .nav-menu ul li span {
   background-size: cover;
   text-align: center;
   color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .intersection h1 {
@@ -447,13 +496,16 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .our-team {
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
-  margin: 0 auto;
 }
 
 .our-team h1 {
+  padding-bottom: 5rem;
+  display: inline-block;
   text-align: center;
+  position: relative;
   font-size: 4rem;
 }
 
@@ -461,7 +513,35 @@ nav .grid-container .nav .nav-menu ul li span {
   color: #9F449B;
 }
 
-.our-team #arrow_left {
+.our-team h1:before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #9F449B;
+  border-left: 1px solid #9F449B;
+  display: block;
+  left: -20px;
+  top: 80px;
+}
+
+.our-team h1:after {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #9F449B;
+  border-right: 1px solid #9F449B;
+  display: block;
+  left: 260px;
+  top: -80px;
+}
+
+.our-team .arrows {
+  padding-bottom: 5rem;
+}
+
+.our-team .arrows #arrow_left {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -498,16 +578,42 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .our-skills {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 7rem;
 }
 
 .our-skills h1 {
+  display: inline-block;
   text-align: center;
+  position: relative;
   font-size: 4rem;
 }
 
 .our-skills h1 span {
   color: #9F449B;
+}
+
+.our-skills h1:before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #9F449B;
+  border-left: 1px solid #9F449B;
+  display: block;
+  left: -20px;
+  top: 80px;
+}
+
+.our-skills h1:after {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #9F449B;
+  border-right: 1px solid #9F449B;
+  display: block;
+  left: 260px;
+  top: -85px;
 }
 
 .our-skills .our-skills-panel-top {
@@ -517,8 +623,8 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .our-skills .col-5 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .our-skills .col-5 .panel-text {
@@ -545,7 +651,8 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .slider-section .slider-numbers {
-  padding-top: 50px;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 
 .slider-section .slider-numbers p {
@@ -557,17 +664,18 @@ nav .grid-container .nav .nav-menu ul li span {
   font-size: 3rem;
 }
 
-.slider-section .slider-quotes {
-  text-align: center;
-}
-
 .slider-section .slider-quotes .col-10 {
   float: none;
   margin: 0 auto;
+  text-align: center;
 }
 
 .slider-section .slider-quotes img {
   width: 25%;
+}
+
+.slider-section .slider-quotes p {
+  padding-top: 2rem;
 }
 
 .slider-section .slider-quotes .slider-name {
@@ -575,7 +683,7 @@ nav .grid-container .nav .nav-menu ul li span {
 }
 
 .slider-section .slider-quotes .slider-dot-div {
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
 }
 
 .slider-section .slider-quotes .slider-dot-div .slider-dot {
@@ -590,17 +698,44 @@ nav .grid-container .nav .nav-menu ul li span {
   max-width: 1220px;
   background-color: white;
   margin: 0 auto;
-  margin-top: -40px;
-  padding-top: 60px;
+  margin-top: -4rem;
+  padding-top: 6rem;
+  text-align: center;
 }
 
 .our-portfolio h1 {
+  display: inline-block;
   text-align: center;
+  position: relative;
   font-size: 4rem;
 }
 
 .our-portfolio h1 span {
   color: #9F449B;
+}
+
+.our-portfolio h1:before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #9F449B;
+  border-left: 1px solid #9F449B;
+  display: block;
+  left: -20px;
+  top: 80px;
+}
+
+.our-portfolio h1:after {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #9F449B;
+  border-right: 1px solid #9F449B;
+  display: block;
+  left: 350px;
+  top: -85px;
 }
 
 .portfolio-box {
@@ -687,11 +822,45 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .form-section .col-12 {
   text-align: center;
-  font-size: 4rem;
-  margin-bottom: 40px;
+  padding-bottom: 5rem;
 }
 
-.form-section .col-12 span {
+.form-section .col-12 h1 {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-size: 4rem;
+}
+
+.form-section .col-12 h1 span {
+  color: #9F449B;
+}
+
+.form-section .col-12 h1:before {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #9F449B;
+  border-left: 1px solid #9F449B;
+  display: block;
+  left: -20px;
+  top: 80px;
+}
+
+.form-section .col-12 h1:after {
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #9F449B;
+  border-right: 1px solid #9F449B;
+  display: block;
+  left: 330px;
+  top: -85px;
+}
+
+.form-section .col-12 h1 span {
   color: #9F449B;
 }
 
@@ -719,6 +888,7 @@ nav .grid-container .nav .nav-menu ul li span {
   padding: 15px 30px;
   margin-left: 10px;
   font-size: 0.75rem;
+  border: none;
 }
 
 .form-section .col-6 .form-section-upper-text {
@@ -755,7 +925,7 @@ nav .grid-container .nav .nav-menu ul li span {
 
 .form-section h4 {
   font-size: 3rem;
-  margin-top: 150px;
+  padding-top: 15rem;
 }
 
 .form-section h4 span {

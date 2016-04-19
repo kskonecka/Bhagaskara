@@ -2,10 +2,12 @@
   max-width: 1220px;
   background-color: white;
   margin: 0 auto;
-  margin-top: -40px;
-  padding-top: 60px; //nie czy to ok
+  margin-top: -4rem;
+  padding-top: 6rem; //nie czy to ok
+  text-align: center;
   h1 {
     @include title();
+    @include quote-marks(-20px, 80px, 350px, -85px);
   }
 }
 

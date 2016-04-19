@@ -2,6 +2,9 @@
   background-color: #EEEEEE;
   .grid-container {
     text-align: center;
+    // font-family: HELVETICA NEUE!
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     .col-3 {
       .col-8 {
         float: none;
@@ -10,6 +13,10 @@
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.9rem;
+          line-height: 1.8rem;
         }
       }
     }

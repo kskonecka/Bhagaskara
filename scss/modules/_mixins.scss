@@ -17,11 +17,39 @@
 }
 
 @mixin title() {
+  display: inline-block;
   text-align: center;
+  position: relative;
   font-size: $h1-font-size;
   span {
     color: $select-color;
   }
+}
+
+@mixin quote-marks($before-left, $before-top, $after-left, $after-top) {
+  &:before{
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid $select-color;
+    border-left: 1px solid $select-color;
+    display: block;
+    left:$before-left;
+    top: $before-top;
+
+    }
+ &:after{
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid $select-color;
+    border-right: 1px solid $select-color;
+    display: block;
+    left:$after-left;
+    top: $after-top;
+    }
 }
 
 @mixin skill-panel () {

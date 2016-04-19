@@ -1,12 +1,19 @@
 .form-section {
   .col-12 {
     text-align: center;
-    font-size: $h1-font-size;
-    margin-bottom: 40px;
+    padding-bottom: 5rem;
+    h1 {
+      @include title();
+      @include quote-marks(-20px, 80px, 330px, -85px);
+
+    // text-align: center;
+    // font-size: $h1-font-size;
+    // margin-bottom: 4rem;
     span {
       color: $select-color;
     }
   }
+}
   form {
     input[type=text], input[type=email], textarea {
       width: 90%;
@@ -23,6 +30,7 @@
       padding: 15px 30px;
       margin-left: 10px;
       font-size: 0.75rem;
+      border: none;
    }
   }
   .col-6 {
@@ -50,6 +58,6 @@
  }
  h4 {
    @include logo(3rem);
-   margin-top: 150px;
+   padding-top: 15rem;
  }
 }

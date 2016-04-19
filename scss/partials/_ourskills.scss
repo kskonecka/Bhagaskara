@@ -1,8 +1,10 @@
 .our-skills {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 7rem;
   h1 {
     @include title();
+    @include quote-marks(-20px, 80px, 260px, -85px);
+
     }
   .our-skills-panel-top {
     margin-top: 80px;
@@ -11,7 +13,7 @@
     }
   .col-5 {
       @include skill-panel;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 }

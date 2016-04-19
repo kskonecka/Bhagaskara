@@ -1,6 +1,13 @@
 .about-us {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
   .about-us-title {
-    @include title();
+    text-align: center;
+    padding-bottom: 2rem;
+    h1 {
+      @include title();
+      @include quote-marks(-20px, 80px, 245px, -80px);
+      }
   }
   .about-us-content {
     display: flex;
@@ -12,7 +19,7 @@
     }
     .about-us-right {
       width: 50%;
-      margin-left: 30px; //to jest to miedzy columnami
+      margin-left: 30px; //to jest to miedzy columnami 
       .about-us-text{
         float: right;
         line-height: 2rem;

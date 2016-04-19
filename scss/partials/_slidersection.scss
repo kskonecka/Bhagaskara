@@ -1,7 +1,8 @@
 .slider-section {
   background-color: #EEEEEE;
   .slider-numbers {
-    padding-top: 50px;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
     p {
       text-align: center;
       font-size: 0.75rem;
@@ -14,16 +15,19 @@
     .col-10 {
       float: none;
       margin: 0 auto;
+      text-align: center;
      }
-     text-align: center;
        img {
          width: 25%;
+       }
+       p {
+         padding-top: 2rem;
        }
        .slider-name {
          padding: 20px 0;
        }
        .slider-dot-div {
-         padding-bottom: 80px;
+         padding-bottom: 8rem;
          .slider-dot {
            display: inline-block;
            width: 6px;
