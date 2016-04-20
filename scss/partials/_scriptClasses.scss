@@ -1,9 +1,19 @@
-// .sticky {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-// }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 50px 0px rgba(0,0,0,0.75);
+  z-index: 100;
+}
+.invisible {
+  display: none;
+}
 
+//clases for the PORTFOLIO GALLERY
   .fullScreen{
     position: fixed;
     // margin: 0 auto;

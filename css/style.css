@@ -285,6 +285,22 @@ input[type=button] {
   fill-rule: evenodd;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 50px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+
+.invisible {
+  display: none;
+}
+
 .fullScreen {
   position: fixed;
   width: 100%;
@@ -374,16 +390,18 @@ header .grid-container .header-menu-arrow .col-1 {
 
 nav {
   background-color: white;
-  z-index: 1;
+  z-index: 5;
 }
 
-nav .grid-container {
-  height: 70px;
+nav .menu-bg {
+  background-color: white;
+  width: 100%;
 }
 
 nav .grid-container .nav {
   vertical-align: bottom;
   background-color: white;
+  padding-top: 15px;
 }
 
 nav .grid-container .nav .nav-logo {
@@ -396,6 +414,11 @@ nav .grid-container .nav .nav-logo span {
 
 nav .grid-container .nav .nav-menu {
   text-align: right;
+  background-color: white;
+}
+
+nav .grid-container .nav .nav-menu ul {
+  padding-top: 9px;
 }
 
 nav .grid-container .nav .nav-menu ul li {

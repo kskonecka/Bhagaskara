@@ -6,20 +6,25 @@
 
 nav {
   background-color: white;
-  z-index: 1;
+  z-index: 5;
+  .menu-bg {
+    background-color: white;
+    width: 100%;
+  }
   .grid-container {
-  // padding: 20px 0 20px 0;
-  height: 70px; //to jest potrzebne do sticky menu
   .nav {
     vertical-align: bottom;
     background-color: white;
+    padding-top: 15px;
   .nav-logo {
     @include logo(1.5rem);
   }
   .nav-menu {
     text-align: right;
     // padding-top: 10px;
+    background-color: white;
     ul {
+      padding-top: 9px;
       li {
         display: inline-block;
         margin-left: 5px;
