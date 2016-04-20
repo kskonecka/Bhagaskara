@@ -14,6 +14,7 @@
 
 .portfolio-box {
   font-family: $helvetica-font;
+  z-index: 0;
   .portfolio-filter-icons {
     text-align: center;
     padding: 60px 0;
@@ -34,7 +35,11 @@
     div.col-4{
       img {
       // padding-left: 7px; tu jak ma byc przerwa miedzy tymi gridami to nie trzeba paddingu
+      &:hover {
+        opacity: 0.5;
       }
+    }
+
       p {
         text-align: center;
         padding-top: 1rem;
