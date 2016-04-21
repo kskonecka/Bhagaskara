@@ -268,6 +268,7 @@ input[type=button] {
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 4px;
+  transition: 1s;
 }
 
 .cls-1:hover {
@@ -293,24 +294,13 @@ input[type=button] {
   stroke-linejoin: round;
   stroke-width: 5px;
   fill-rule: evenodd;
+  transition: 0.5s;
 }
 
 .cls-4:hover {
   fill: #9f449b;
   fill-opacity: 0.8;
   stroke: #9f449b;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 50px 0px rgba(0, 0, 0, 0.75);
-  z-index: 100;
 }
 
 .invisible {
@@ -636,12 +626,12 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   transform: scaleX(-1);
 }
 
-.our-team .people {
+.our-team .members-div .people {
   float: none;
   margin: 0 auto;
 }
 
-.our-team .people .person {
+.our-team .members-div .people .person {
   float: none;
   width: 70%;
   margin: 0 auto;
@@ -649,24 +639,28 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   color: #484848;
 }
 
-.our-team .people .person .name {
+.our-team .members-div .people .person .name {
   margin-top: 85px;
   font-weight: bolder;
 }
 
-.our-team .people .person .position {
+.our-team .members-div .people .person .position {
   margin-top: 10px;
   font-size: 0.9rem;
   margin-bottom: 25px;
 }
 
-.our-team .people .person .socialmedia img {
+.our-team .members-div .people .person .socialmedia img {
   width: 20%;
+}
+
+.redford, .newman, .nolte {
+  opacity: 0.5;
+  transition: 1s;
 }
 
 .our-skills {
   text-align: center;
-  padding-top: 5rem;
   padding-bottom: 7rem;
 }
 
@@ -734,6 +728,16 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   background-color: #F0f0f0;
   height: 12px;
   font-family: "titilliumlight";
+}
+
+.our-skills .col-5 .panel-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.our-skills .col-5 .panel-box span {
+  background-color: #9F449B;
+  height: 100%;
 }
 
 .slider-section {

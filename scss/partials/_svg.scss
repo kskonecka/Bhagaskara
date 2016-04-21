@@ -10,6 +10,7 @@
         stroke: #fff;
         stroke-linejoin: round;
         stroke-width: 4px;
+        transition: 1s;
         &:hover {
           fill: #9f449b;
           fill-opacity: 0.6;
@@ -34,6 +35,7 @@
           stroke-linejoin: round;
           stroke-width: 5px;
           fill-rule: evenodd;
+          transition: 0.5s;
           &:hover {
             fill: #9f449b;
             fill-opacity: 0.8;

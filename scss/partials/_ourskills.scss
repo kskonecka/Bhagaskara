@@ -1,6 +1,6 @@
 .our-skills {
   text-align: center;
-  padding-top: 5rem;
+  // padding-top: 5rem;
   padding-bottom: 7rem;
   h1 {
     @include title();
@@ -16,5 +16,13 @@
       @include skill-panel;
       padding-top: 1rem;
       padding-bottom: 1rem;
+      .panel-box {
+        display: flex;
+        justify-content: flex-start;
+        span {
+          background-color: $select-color;
+          height: 100%;
+        }
+      }
     }
 }

@@ -1,4 +1,7 @@
 .our-team {
+  // * {
+  //   border: 1px solid $select-color;
+  // }
   padding-top: 5rem;
   padding-bottom: 5rem;
   // border: 1px solid red;
@@ -17,6 +20,8 @@
       transform: scaleX(-1);
       }
     }
+  .members-div {
+    // opacity: 0.5;
     .people{
       float: none;
       margin: 0 auto;
@@ -44,4 +49,12 @@
       }
     }
   }
+ }
 }
+.redford, .newman, .nolte {
+  opacity: 0.5;
+  transition: 1s;
+  // &:hover {
+  //   opacity: 1;
+  // }
+  }
