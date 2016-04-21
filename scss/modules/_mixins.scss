@@ -70,3 +70,11 @@
      font-family: $other-font-family;
    }
   }
+
+@mixin link-hover() {
+    text-decoration: none;
+    &:hover {
+      color: $select-color;
+      //font weight!
+    }
+  }

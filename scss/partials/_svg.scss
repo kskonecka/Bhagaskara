@@ -1,5 +1,8 @@
       .cls-1, .cls-2, .cls-3 {
         fill: #fff;
+        &:hover {
+          fill: #9f449b;
+        }
       }
 
       .cls-1 {
@@ -7,6 +10,11 @@
         stroke: #fff;
         stroke-linejoin: round;
         stroke-width: 4px;
+        &:hover {
+          fill: #9f449b;
+          fill-opacity: 0.6;
+          stroke: #9f449b;
+        }
       }
 
       .cls-1, .cls-2 {
@@ -26,4 +34,9 @@
           stroke-linejoin: round;
           stroke-width: 5px;
           fill-rule: evenodd;
+          &:hover {
+            fill: #9f449b;
+            fill-opacity: 0.8;
+            stroke: #9f449b;
+          }
       }

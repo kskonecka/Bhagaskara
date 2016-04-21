@@ -17,7 +17,11 @@ nav {
     background-color: white;
     padding-top: 15px;
   .nav-logo {
-    @include logo(1.5rem);
+    a {
+      @include link-hover();
+      @include logo(1.5rem);
+      text-decoration: none;
+    }
   }
   .nav-menu {
     text-align: right;
@@ -29,15 +33,12 @@ nav {
         display: inline-block;
         margin-left: 5px;
         a {
-          text-decoration: none;
+          @include link-hover;
           color: black;
-          span {
-            color: $select-color;
           }
-        }
-        }
+         }
+       }
       }
     }
   }
-}
 }

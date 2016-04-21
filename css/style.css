@@ -259,11 +259,21 @@ input[type=button] {
   fill: #fff;
 }
 
+.cls-1:hover, .cls-2:hover, .cls-3:hover {
+  fill: #9f449b;
+}
+
 .cls-1 {
   fill-opacity: 0.1;
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 4px;
+}
+
+.cls-1:hover {
+  fill: #9f449b;
+  fill-opacity: 0.6;
+  stroke: #9f449b;
 }
 
 .cls-1, .cls-2 {
@@ -283,6 +293,12 @@ input[type=button] {
   stroke-linejoin: round;
   stroke-width: 5px;
   fill-rule: evenodd;
+}
+
+.cls-4:hover {
+  fill: #9f449b;
+  fill-opacity: 0.8;
+  stroke: #9f449b;
 }
 
 .sticky {
@@ -404,11 +420,17 @@ nav .grid-container .nav {
   padding-top: 15px;
 }
 
-nav .grid-container .nav .nav-logo {
+nav .grid-container .nav .nav-logo a {
+  text-decoration: none;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
-nav .grid-container .nav .nav-logo span {
+nav .grid-container .nav .nav-logo a:hover {
+  color: #9F449B;
+}
+
+nav .grid-container .nav .nav-logo a span {
   color: #9F449B;
 }
 
@@ -431,7 +453,7 @@ nav .grid-container .nav .nav-menu ul li a {
   color: black;
 }
 
-nav .grid-container .nav .nav-menu ul li a span {
+nav .grid-container .nav .nav-menu ul li a:hover {
   color: #9F449B;
 }
 

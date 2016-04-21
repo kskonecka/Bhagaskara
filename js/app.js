@@ -3,7 +3,7 @@ $(document).ready(function(){
 //MENU scroll
 
 function scrollMenu(){
-  var menuLinks = $("ul").find("a");
+  var menuLinks = $("nav").find("a");
   console.log(menuLinks);
 
     menuLinks.on("click", function(){
@@ -13,6 +13,18 @@ function scrollMenu(){
 
       $("html, body").animate({
         scrollTop: $(menuLinksHref).offset().top
+      },1000);
+    });
+
+  var hexLinks = $('.hex').find('a');
+  console.log(hexLinks);
+    hexLinks.on("click", function(){
+      event.preventDefault();
+      var hexLinksHref = $(this).attr('href');
+      console.log(hexLinksHref);
+
+      $("html, body").animate({
+        scrollTop: $(hexLinksHref).offset().top
       },1000);
     });
 };
