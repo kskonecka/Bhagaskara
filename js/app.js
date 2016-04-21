@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+//MENU scroll
+
+function scrollMenu(){
+  var menuLinks = $("ul").find("a");
+  console.log(menuLinks);
+
+    menuLinks.on("click", function(){
+      event.preventDefault();
+      var menuLinksHref = $(this).attr('href');
+      console.log(menuLinksHref);
+
+      $("html, body").animate({
+        scrollTop: $(menuLinksHref).offset().top
+      },1000);
+    });
+};
+scrollMenu();
+
 //STICKY MENU
 function setStickyMenu(){
   var menu = $('.menu'); //grid-container mainwidth
