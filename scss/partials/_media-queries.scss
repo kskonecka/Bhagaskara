@@ -1,3 +1,94 @@
+@media only screen and (max-width: 500px) {
+  // header {
+  //   height: 100vh;
+  // }
+  // html{
+  //   font-size: 8px;}
+  .hide-mobile {//section in header
+      display: none;
+  }
+  .blue-background {//section one
+    .grid-container{
+    .col-3 {
+      width: 100%;
+      float: none;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      svg {
+        display: inline-block;
+        width: 40% ;
+      }
+      .mobile-inline-block {
+        display: inline-block;
+        width: 58%;
+        align-self: center;
+        h2 {
+          min-height: 0;
+          padding-top: 0;
+        }
+      }
+    }
+    }
+  }
+  .about-us{//about us
+    .about-us-title {
+      h1 {
+        font-size: $mobile-h1-font-size;
+      }
+    }
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+    .about-us-img {
+      width: 100%;
+      padding: 0 20px;
+    }
+    .about-us-right{
+      width: 100%;
+      .about-us-text {
+        font-size: 1.25rem;
+        text-align: justify;
+      }
+    }
+  }
+}
+  .intersection {
+    h1 {
+      font-size: $mobile-intersection-font-size;
+    }
+  }
+  .our-team {
+    h1 {
+      font-size: $mobile-h1-font-size;
+    }
+    .members-div {
+      .col-4 {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // breakpoints;
 $tablet-width: 1224px;
 $phone-width: 768px;

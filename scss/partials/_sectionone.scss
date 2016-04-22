@@ -5,20 +5,20 @@
     // font-family: HELVETICA NEUE!
     padding-top: 5rem;
     padding-bottom: 5rem;
-    .col-3 {
-      .col-8 {
-        float: none;
-        margin: 0 auto;
+     .col-3{
+       padding: 0 5px;
         h2 {
-          margin-top: 10px;
-          margin-bottom: 10px;
+          padding-top: 20px;
           font-size: 1.2rem;
+          min-height: 4rem;
         }
         p {
           font-size: 0.9rem;
           line-height: 1.8rem;
         }
+        svg {
+          width: 70%;
+        }
       }
-    }
   }
 }

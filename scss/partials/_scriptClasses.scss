@@ -1,19 +1,19 @@
 
 //STICKY MENU
 
-// .sticky {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   max-width: 100% !important;
-//   padding: 0 15px;
-//   background-color: white;
-//   -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-//   -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-//   box-shadow: 0px 3px 50px 0px rgba(0,0,0,0.75);
-//   z-index: 100;
-// }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 0 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 50px 0px rgba(0,0,0,0.75);
+  z-index: 10;
+}
 
 
 
@@ -23,19 +23,19 @@
 
 //clases for the PORTFOLIO GALLERY
   .fullScreen{
+    z-index: 11;
     position: fixed;
     // margin: 0 auto;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 1;
     background:rgba(black,0.9);
      img{
       display: block;
       height: 90%;
       margin: 0 auto;
-      z-index: 2;
+      z-index: 12;
     }
     .closeButton {
       display: block;

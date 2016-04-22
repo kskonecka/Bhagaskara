@@ -11,46 +11,42 @@
     @include title();
     @include quote-marks(-20px, 80px, 260px, -80px);
     }
-    .arrows {
-      padding-bottom: 5rem;
-    #arrow_left {
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      }
-    }
+    // .arrows {
+    //   padding-bottom: 5rem;
+    //
+    // }
   .members-div {
-    // opacity: 0.5;
+
     .people{
       float: none;
       margin: 0 auto;
-    .person {
-      float: none;
-      width: 70%;
-      margin: 0 auto;
-      font-family: $other-font-family;
-      color: #484848;
-      .name {
-        margin-top:85px;
-        // font-family: Helvetica;
-        // color: #484848;
-        font-weight: bolder;
-      }
-      .position {
-        margin-top: 10px;
-        font-size: 0.9rem;
-        margin-bottom: 25px;
-      }
-      .socialmedia {
-        img { //to sie ma tez rozciagac tak jak na dole?
-          width: 20%;
+      .actors {
+        font-family: $other-font-family;
+        color: #484848;
+        .avatar {
+          float: none;
+          width: 70%;
+          margin: 0 auto;
         }
-      }
-    }
-  }
+          .name {
+            margin-top:85px;
+           // font-family: Helvetica;
+           font-weight: bolder;
+           }
+           .position {
+             margin-top: 10px;
+             font-size: 0.9rem;
+             margin-bottom: 25px;
+             }
+             .socialmedia {
+               img { //to sie ma tez rozciagac tak jak na dole?
+                 width: 20%;
+                 }
+             }
+         }
+       }
+     }
  }
-}
 .redford, .newman, .nolte {
   opacity: 0.5;
   transition: 1s;

@@ -36,6 +36,7 @@ function setStickyMenu(){
   var menuBg = $('.menu-bg');
   var menuOffset = menu.offset().top;
 
+  checkSticky();
 
   $(window).on('scroll', function(event){
     checkSticky();
@@ -43,11 +44,12 @@ function setStickyMenu(){
 
   $(window).on('resize', function(){
     checkSticky();
+
   });
 
   function checkSticky(){
     var scrollTop = $(document).scrollTop();
-      if (scrollTop >= menuBg.offset().top) {
+      if (scrollTop >= menuBg.offset().top || $(window).width() < 500) {
         menu.addClass('sticky');
       }else{
         menu.removeClass('sticky')
@@ -73,21 +75,21 @@ images.each(function(index, value){
     var fullScreen = $('<div>'); // create div that contains big image
     var closeButton = $('<div>'); //create button that exits full screen
 
-    fullScreen.addClass('fullScreen').appendTo($('.gallery-base'));//add fullScreen class and attach to <body>
+    fullScreen.addClass('fullScreen').fadeIn('slow').appendTo($('.gallery-base'));//add fullScreen class and attach to <body>
     bigImage.attr('src', bigImageSource).appendTo(fullScreen);//add img src and attach to <fullScreen>
     closeButton.addClass('closeButton').appendTo(fullScreen);//add closeButton and attach to <fullScreen>
 
     $('body').on('click', '.closeButton', function(){ //extis full screen
-        fullScreen.remove();
+        fullScreen.fadeOut('slow');
     });
   });//end of images.this.event
 }); //end of images.each function
 
 
-//******************************************************************************************
-//opacity
+//*****************************************************************************************
 function progressBar(){
 
+var actors = $('.actors');
 var redford = $('.redford'); //definiuje zmienne elementow o klasie redford, newman i nolte
 var newman = $('.newman');
 var nolte = $('.nolte');
@@ -99,21 +101,18 @@ var progressBar3 = $("#bar3");
 var progressBar4 = $("#bar4");
 
 redford.on('mouseenter', function(){ //to zmienia opacity na ruch myszy
+  actors.css('opacity', opacity); //a pozostale elementy wracaja do ccs-owego opacity
   redford.css('opacity', 1); //opacity 1
-  newman.css('opacity', opacity); //a pozostale elementy wracaja do ccs-owego opacity
-  nolte.css('opacity', opacity);
 });
 
 newman.on('mouseenter', function (){
+  actors.css('opacity', opacity);
   newman.css('opacity', 1);
-  redford.css('opacity', opacity);
-  nolte.css('opacity', opacity);
 });
 
 nolte.on('mouseenter', function (){//to zmienia opacity na ruch myszy
+  actors.css('opacity', opacity);
   nolte.css('opacity', 1);
-  newman.css('opacity', opacity);
-  redford.css('opacity', opacity);
 });
 
   redford.on('click', function(){ //na klika
