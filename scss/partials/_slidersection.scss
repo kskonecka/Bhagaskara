@@ -15,26 +15,29 @@
     position: relative;
     #arrow_left, #arrow_right {
       position: absolute;
+      z-index: 1;
     }
     #arrow_left {
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
-      top:30px;
+      top:17%;
+      left:5%;
       }
     #arrow_right {
-      top: 30px;
-      left: 200px;
+      top: 17%;
+      left: 89%;
 
     }
 
     .visible-slider {
+      z-index: 0;
       width: 100%;
-      float: none;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0 2.5rem;
+      // float: none;
+      // margin: 0 auto;
+      // text-align: center;
+      // padding: 0 2.5rem;
       overflow: hidden;
       ul{
         list-style: none;
@@ -45,7 +48,9 @@
         // overflow: hidden;
         li{
           margin: 0;
-         display: inline-block;
+          // border:1px solid red;
+          float: left;
+          text-align: center;
        img {
          width: 25%;
        }

@@ -78,3 +78,34 @@
       //font weight!
     }
   }
+
+ @mixin mobile-skill-panels ($html, $gd, $wd, $uiux){
+    margin: 0 auto;
+    flex: none;
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    text-align: left;
+    .mobile-html {
+      display: block;
+      width: $html;
+      height: 100%;
+      background-color: $select-color;
+    }
+    .mobile-gd {
+      display: block;
+      width: $gd;
+      background-color: $select-color;
+    }
+    .mobile-wd {
+      display: block;
+      width: $wd;
+      background-color: $select-color;
+    }
+    .mobile-uiux {
+      display: block;
+      width: $uiux;
+      background-color: $select-color;
+    }
+  }

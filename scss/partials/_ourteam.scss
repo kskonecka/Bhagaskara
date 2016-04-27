@@ -3,7 +3,7 @@
   //   border: 1px solid $select-color;
   // }
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   // border: 1px solid red;
   text-align: center;
   h1 {
@@ -23,13 +23,15 @@
       .actors {
         font-family: $other-font-family;
         color: #484848;
+        opacity:0.5;
+        transition: 1s;
         .avatar {
           float: none;
           width: 70%;
           margin: 0 auto;
         }
           .name {
-            margin-top:85px;
+            padding-top:3rem;;
            // font-family: Helvetica;
            font-weight: bolder;
            }
@@ -37,6 +39,15 @@
              margin-top: 10px;
              font-size: 0.9rem;
              margin-bottom: 25px;
+             }
+             .show-mobile-redford {
+               display: none;
+             }
+             .show-mobile-newman {
+               display: none;
+             }
+             .show-mobile-nolte {
+               display: none;
              }
              .socialmedia {
                img { //to sie ma tez rozciagac tak jak na dole?
@@ -47,10 +58,10 @@
        }
      }
  }
-.redford, .newman, .nolte {
-  opacity: 0.5;
-  transition: 1s;
+// .redford, .newman, .nolte {
+//   opacity: 0.5;
+//   transition: 1s;
   // &:hover {
   //   opacity: 1;
   // }
-  }
+  // }

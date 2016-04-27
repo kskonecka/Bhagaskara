@@ -315,6 +315,7 @@ input[type=button] {
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 50px 0px rgba(0, 0, 0, 0.75);
   z-index: 10;
+  transition: 0.2s;
 }
 
 .invisible {
@@ -591,7 +592,7 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 
 .our-team {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
@@ -640,6 +641,8 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 .our-team .members-div .people .actors {
   font-family: "titilliumlight";
   color: #484848;
+  opacity: 0.5;
+  transition: 1s;
 }
 
 .our-team .members-div .people .actors .avatar {
@@ -649,7 +652,7 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 }
 
 .our-team .members-div .people .actors .name {
-  margin-top: 85px;
+  padding-top: 3rem;
   font-weight: bolder;
 }
 
@@ -659,58 +662,27 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   margin-bottom: 25px;
 }
 
+.our-team .members-div .people .actors .show-mobile-redford {
+  display: none;
+}
+
+.our-team .members-div .people .actors .show-mobile-newman {
+  display: none;
+}
+
+.our-team .members-div .people .actors .show-mobile-nolte {
+  display: none;
+}
+
 .our-team .members-div .people .actors .socialmedia img {
   width: 20%;
 }
 
-.redford, .newman, .nolte {
-  opacity: 0.5;
-  transition: 1s;
-}
-
 .our-skills {
   text-align: center;
-  padding-bottom: 7rem;
-}
-
-.our-skills h1 {
-  z-index: 0;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  font-size: 4rem;
-}
-
-.our-skills h1 span {
-  color: #9F449B;
-}
-
-.our-skills h1:before {
-  position: relative;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid #9F449B;
-  border-left: 1px solid #9F449B;
-  display: block;
-  left: -20px;
-  top: 80px;
-}
-
-.our-skills h1:after {
-  position: relative;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid #9F449B;
-  border-right: 1px solid #9F449B;
-  display: block;
-  left: 260px;
-  top: -85px;
 }
 
 .our-skills .our-skills-panel-top {
-  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -773,6 +745,7 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 
 .slider-section .slider-quotes #arrow_left, .slider-section .slider-quotes #arrow_right {
   position: absolute;
+  z-index: 1;
 }
 
 .slider-section .slider-quotes #arrow_left {
@@ -780,20 +753,18 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  top: 30px;
+  top: 17%;
+  left: 5%;
 }
 
 .slider-section .slider-quotes #arrow_right {
-  top: 30px;
-  left: 200px;
+  top: 17%;
+  left: 89%;
 }
 
 .slider-section .slider-quotes .visible-slider {
+  z-index: 0;
   width: 100%;
-  float: none;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 2.5rem;
   overflow: hidden;
 }
 
@@ -806,7 +777,8 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 
 .slider-section .slider-quotes .visible-slider ul li {
   margin: 0;
-  display: inline-block;
+  float: left;
+  text-align: center;
 }
 
 .slider-section .slider-quotes .visible-slider ul li img {
@@ -934,13 +906,30 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   color: white;
 }
 
+.portfolio-box .portfolio-photos-top div.col-4, .portfolio-box .portfolio-photos-bottom div.col-4 {
+  position: relative;
+}
+
 .portfolio-box .portfolio-photos-top div.col-4 img, .portfolio-box .portfolio-photos-bottom div.col-4 img {
+  z-index: 2;
   transition: 0.25s;
 }
 
 .portfolio-box .portfolio-photos-top div.col-4 img:hover, .portfolio-box .portfolio-photos-bottom div.col-4 img:hover {
   transition: 1s;
   opacity: 0.5;
+}
+
+.portfolio-box .portfolio-photos-top div.col-4 img:before, .portfolio-box .portfolio-photos-bottom div.col-4 img:before {
+  content: "";
+  display: block;
+  z-index: -3;
+  width: 340px;
+  height: 340px;
+  border: 1px solid black;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .portfolio-box .portfolio-photos-top div.col-4 p, .portfolio-box .portfolio-photos-bottom div.col-4 p {
@@ -1159,7 +1148,7 @@ nav .grid-container .nav .nav-menu ul li a:hover {
 
 @media only screen and (max-width: 500px) {
   .hide-mobile {
-    display: none;
+    display: none !important;
   }
   .blue-background .grid-container .col-3 {
     width: 100%;
@@ -1208,8 +1197,133 @@ nav .grid-container .nav .nav-menu ul li a:hover {
   .our-team h1 {
     font-size: 3rem;
   }
-  .our-team .members-div .col-4 {
+  .our-team .members-div .people .actors {
+    opacity: none;
     width: 100%;
     height: 100vh;
+  }
+  .our-team .members-div .people .actors .name {
+    padding-top: 15px;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford {
+    display: block;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford div {
+    margin: 0 auto;
+    flex: none;
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford div .mobile-html {
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford div .mobile-gd {
+    display: block;
+    width: 95%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford div .mobile-wd {
+    display: block;
+    width: 70%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-redford div .mobile-uiux {
+    display: block;
+    width: 75%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman {
+    display: block;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman div {
+    margin: 0 auto;
+    flex: none;
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman div .mobile-html {
+    display: block;
+    width: 95%;
+    height: 100%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman div .mobile-gd {
+    display: block;
+    width: 80%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman div .mobile-wd {
+    display: block;
+    width: 65%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-newman div .mobile-uiux {
+    display: block;
+    width: 85%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte {
+    display: block;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte div {
+    margin: 0 auto;
+    flex: none;
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte div .mobile-html {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte div .mobile-gd {
+    display: block;
+    width: 90%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte div .mobile-wd {
+    display: block;
+    width: 85%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .show-mobile-nolte div .mobile-uiux {
+    display: block;
+    width: 70%;
+    background-color: #9F449B;
+  }
+  .our-team .members-div .people .actors .socialmedia img {
+    padding-top: 10px;
+    width: 10%;
+  }
+  .our-skills {
+    display: none;
+  }
+  .portfolio-box .mobile-hide {
+    display: none;
+  }
+  .form-section [class*='col-'] {
+    width: 100%;
+    float: none;
+  }
+  .form-section .col-6 .form-section-upper-text, .form-section .col-6 .form-section-address, .form-section .col-6 ul {
+    padding: 20px 10px;
+    text-align: justify;
+  }
+  .form-section .col-6 ul {
+    width: 100%;
+    justify-content: center;
   }
 }

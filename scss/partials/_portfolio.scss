@@ -1,3 +1,4 @@
+
 .our-portfolio {
   max-width: 1220px;
   background-color: white;
@@ -34,15 +35,28 @@
   }
   .portfolio-photos-top, .portfolio-photos-bottom {
     div.col-4{
+      position: relative;
       img {
+        // position: absolute;
+        z-index: 2;
         transition: 0.25s;
         // padding-left: 7px; tu jak ma byc przerwa miedzy tymi gridami to nie trzeba paddingu
         &:hover {
           transition: 1s;
           opacity: 0.5;
+          }
+         &:before {
+           content: "";
+           display: block;
+          z-index: -3;
+          width: 340px;
+          height: 340px;
+          border: 1px solid black;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
       }
-    }
-
       p {
         text-align: center;
         padding-top: 1rem;
