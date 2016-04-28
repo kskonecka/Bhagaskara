@@ -5,7 +5,7 @@
     padding-bottom: 5rem;
     h1 {
       @include title();
-      @include quote-marks(-20px, 80px, 330px, -85px);
+      @include quote-marks(-20px, 80px, 100%, -85px);
 
     // text-align: center;
     // font-size: $h1-font-size;
@@ -60,5 +60,5 @@
  h4 {
    @include logo(3rem);
    padding-top: 15rem;
- }
+  }
 }

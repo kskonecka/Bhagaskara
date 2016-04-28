@@ -9,7 +9,7 @@
   h1 {
     padding-bottom: 5rem;
     @include title();
-    @include quote-marks(-20px, 80px, 260px, -80px);
+    @include quote-marks(-20px, 80px, 100%, -80px);
     }
     // .arrows {
     //   padding-bottom: 5rem;

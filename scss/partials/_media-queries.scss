@@ -68,10 +68,12 @@
     .members-div {
       .people {
       .actors {
-        opacity: none; //on tu uwaza ze opacity 0.5 to jego 1
+        opacity: 1;
         width: 100%;
         height: 100vh;
-
+        .avatar {
+          width: 50%;
+        }
         .name {
           padding-top: 15px;
         }
@@ -108,18 +110,67 @@
   .our-skills {
     display: none;
   }//end of our-skills
+  .slider-section {
+    .slider-numbers {
+      p {
+        span {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .slider-quotes {
+      #arrow_left, #arrow_right {
+        width: 10%;
+        top: 0;
+      }
+      #arrow_right {
+        left:85%;
+      }
+      .visible-slider {
+        ul {
+          li {
+            // p {
+            //   padding-left: 1rem;
+            //   padding-right: 1rem;
+            // }
+          }
+        }
+      }
+    }
+  }
   .our-portfolio {
-
+    h1 {
+      font-size: 3rem;
+    }
   }
   .portfolio-box {
     .mobile-hide {
       display: none;
+    }
+    .portfolio-photos-top, .portfolio-photos-bottom {
+      div.col-4 {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+     }
+    .portfolio-watch-more {
+      a {
+        .portfolio-watch-more-button {
+          // padding-top: 10px; to dla jeszcze wezszego
+          width: 35%;
+        }
+      }
     }
   }
   .form-section {
     [class*='col-'] {
       width: 100%;
       float: none;
+      padding-bottom: 1rem;
+        h1 {
+        font-size: 3rem;
+      }
     }
     .col-6{
     .form-section-upper-text, .form-section-address, ul {

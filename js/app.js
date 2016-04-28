@@ -349,6 +349,14 @@ progressBar();
 
   slider()
 
+//preventDefaults
+
+$("input[type=submit]").on('click', function (event){
+  event.preventDefault()
+  $("input[name=userName]").val("");
+  $("input[type=email]").val("")
+  $("textarea[name=message]").val("")
+})
 
 
 });

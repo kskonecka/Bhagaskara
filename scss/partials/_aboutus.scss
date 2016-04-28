@@ -6,7 +6,7 @@
     padding-bottom: 2rem;
     h1 {
       @include title();
-      @include quote-marks(-20px, 80px, 245px, -80px);
+      @include quote-marks(-20px, 80px, 100%, -80px);
       }
   }
   .about-us-content {
@@ -23,7 +23,7 @@
       .about-us-text{
         float: right;
         line-height: 2rem;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
       }
       .about-us-button {
         margin-top: 20px;
