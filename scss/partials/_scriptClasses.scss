@@ -54,3 +54,24 @@
 .active {
 
 }
+
+.hamburger-list {
+  z-index: 5;
+  position: absolute;
+  padding-right: 3px;
+  top: 55px;
+  right: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
+  // display: block;
+  // transition: 1s;
+  li {
+    display: block;
+    a {
+      @include link-hover;
+      color: black;
+    }
+  }
+}

@@ -49,7 +49,7 @@ function setStickyMenu(){
 
   function checkSticky(){
     var scrollTop = $(document).scrollTop();
-      if (scrollTop >= menuBg.offset().top || $(window).width() < 500) {
+      if (scrollTop >= menuBg.offset().top + 1 || $(window).width() < 500) {
         menu.addClass('sticky');
       }else{
         menu.removeClass('sticky')
@@ -58,6 +58,42 @@ function setStickyMenu(){
   }
 
   setStickyMenu();
+
+
+
+function hamburgerMenu(){
+
+  var mq = window.matchMedia("(max-width: 500px)"); //checks width and shows/hides menus
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+  // media query change
+  function WidthChange(mediaQuery) {
+    if(mediaQuery.matches) {
+      $(".nav-menu").find("ul").hide();
+      $("#hamburger").show();
+      console.log('yes');
+    } else {
+      $(".nav-menu").find("ul").show();
+      $("#hamburger").hide().removeClass('open');
+      $(".nav-menu").find("ul").removeClass('hamburger-list').addClass('wide-menu');
+      console.log('no');
+    }
+  }
+
+  $('#hamburger').click(function(){ //toggles "open" class
+    $(this).toggleClass('open');
+
+    if ($(this).hasClass('open')){  //when class=open it rolls out the menu
+      console.log('open');
+      $(".nav-menu").find("ul").removeClass('wide-menu').addClass('hamburger-list');
+      $(".nav-menu").find("ul").slideDown();
+    }else{
+      $(".nav-menu").find("ul").fadeOut();
+      $(".nav-menu").find("ul").removeClass('hamburger-list').addClass('wide-menu');
+    }
+  });
+}
+hamburgerMenu();
 
 //Portfolio Gallery
 //do zrobienia : plusy i filtry
