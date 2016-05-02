@@ -319,7 +319,13 @@ input[type=button] {
 }
 
 .invisible {
-  display: none;
+  visibility: hidden;
+  transition: 0;
+}
+
+.iconsClick {
+  background-color: #9F449B;
+  color: white;
 }
 
 .fullScreen {
@@ -1270,6 +1276,11 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
 @media only screen and (max-width: 500px) {
   .hide-mobile {
     display: none !important;
+  }
+  .sticky {
+    -webkit-box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.75);
   }
   .blue-background .grid-container .col-3 {
     width: 100%;

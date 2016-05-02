@@ -18,7 +18,12 @@
 
 
 .invisible {
-  display: none;
+  visibility: hidden;
+  transition: 0;
+}
+.iconsClick {
+    background-color: $select-color;
+    color: white;
 }
 
 //clases for the PORTFOLIO GALLERY

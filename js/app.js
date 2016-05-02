@@ -89,7 +89,7 @@ function hamburgerMenu(){
       $(".nav-menu").find("ul").slideDown();
     }else{
       $(".nav-menu").find("ul").fadeOut();
-      $(".nav-menu").find("ul").removeClass('hamburger-list').addClass('wide-menu');
+      // $(".nav-menu").find("ul").removeClass('hamburger-list').addClass('wide-menu');
     }
   });
 }
@@ -120,6 +120,33 @@ images.each(function(index, value){
     });
   });//end of images.this.event
 }); //end of images.each function
+
+function filterPortoflio(){
+  var filterIcons = $('.portfolio-filter-icons').find('div'); //array with the filter buttons
+  console.log(filterIcons);
+  var photoBoxes = $('.photo-box');
+  console.log(photoBoxes);
+
+
+  filterIcons.each(function(index, value){
+    $(this).on('click', function(event){
+      $(this).toggleClass('iconsClick')
+      var filterIconsClasses = $(this).attr('class');
+      console.log(filterIconsClasses);
+
+      photoBoxes.each(function(){
+        var photoTags = $(this).data('filter');
+        console.log(photoTags);
+        // console.log(photoTags.typeOf);
+
+        if (filterIconsClasses.indexOf(photoTags) == -1) { //tu z tym warunkiem jest cos nie tak, bo porownuje tylko pierwszy filtr w data-filter
+          $(this).toggleClass('invisible');
+        } //end of IF
+      }) // end of photoBoxes.each
+    })
+  })//end of filterIcons.each
+}//end of filterPortoflio function
+filterPortoflio();
 
 
 //*****************************************************************************************
@@ -393,6 +420,5 @@ $("input[type=submit]").on('click', function (event){
   $("input[type=email]").val("")
   $("textarea[name=message]").val("")
 })
-
 
 });
