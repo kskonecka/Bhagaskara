@@ -323,7 +323,8 @@ progressBar();
       $('.visible-slider').css('width', widthSlide );
       $('.visible-slider').find('ul').css('width', widthSlide * numberOfSLides);
       //set width for ul element
-      $('.visible-slider').find('ul').children().css('width', widthSlide)
+      $('.visible-slider').find('ul').children().css('width', widthSlide);
+      $('.visible-slider').find('ul').css('left', -widthSlide);
 
     }
     setWidth();
@@ -333,7 +334,7 @@ progressBar();
       setWidth();
     })
     // -----------------------------------------
-    var index = 0;
+    var index = 1;
     var isAnimationRunning = false;
 
     ul.css("width", (widthSlide * $('.visible-slider').find('ul').children().length));
@@ -384,23 +385,21 @@ progressBar();
           index--;
         } else {
           // index = $('.visible-slider').find('ul').children().length - 2;
-          index = -1;
+          index = 0;
         }
 
         console.log(index);
           ul.animate({
               left: -widthSlide*index
           }, 500, function(){
-            // isAnimationRunning = false;
-            if(index === -1){
-              ul.css('left', -($('.visible-slider').find('ul').children().length - 1)*widthSlide)
+            if(index === 0){
+              ul.css('left', -($('.visible-slider').find('ul').children().length-1)*widthSlide)
               console.log('complete');
               index = $('.visible-slider').find('ul').children().length - 2;
               console.log(index);
             }
           });
-          // isAnimationRunning = true;
-      //  }
+
     }
     prevButton.on("click", pushPrevButton);
 
