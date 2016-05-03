@@ -320,7 +320,6 @@ input[type=button] {
 
 .invisible {
   visibility: hidden;
-  transition: 0;
 }
 
 .iconsClick {
@@ -347,16 +346,37 @@ input[type=button] {
 
 .fullScreen .closeButton {
   display: block;
+  position: relative;
   margin: 0 auto;
   margin-top: 0.5rem;
   width: 40px;
   height: 40px;
+  line-height: 40px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.fullScreen .closeButton:hover {
-  background-color: black;
+.fullScreen .closeButton:before, .fullScreen .closeButton:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -19.5px;
+  display: block;
+  height: 10px;
+  width: 39px;
+  background-color: #9F449B;
+  transition: all 0.25s ease-out;
+}
+
+.fullScreen .closeButton:after {
+  transform: rotate(-135deg);
+}
+
+.fullScreen .closeButton:hover:before, .fullScreen .closeButton:hover:after {
+  transform: rotate(0deg);
 }
 
 .hamburger-list {
@@ -1023,6 +1043,7 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
 
 .portfolio-box .portfolio-photos-top div.col-4 .photo-plus img, .portfolio-box .portfolio-photos-bottom div.col-4 .photo-plus img {
   position: relative;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 2;
@@ -1036,20 +1057,20 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
 
 .portfolio-box .portfolio-photos-top div.col-4 .photo-plus .plus-vertical, .portfolio-box .portfolio-photos-bottom div.col-4 .photo-plus .plus-vertical {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 48%;
-  height: 92%;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 96%;
   border-right: 2px solid silver;
   transition: 1s;
 }
 
 .portfolio-box .portfolio-photos-top div.col-4 .photo-plus .plus-horizontal, .portfolio-box .portfolio-photos-bottom div.col-4 .photo-plus .plus-horizontal {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 95%;
-  height: 48%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
   border-bottom: 2px solid silver;
   transition: 1s;
 }
@@ -1332,7 +1353,7 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
   .our-team .members-div .people .actors {
     opacity: 1;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
   }
   .our-team .members-div .people .actors .avatar {
     width: 50%;

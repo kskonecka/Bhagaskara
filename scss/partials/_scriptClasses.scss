@@ -19,7 +19,6 @@
 
 .invisible {
   visibility: hidden;
-  transition: 0;
 }
 .iconsClick {
     background-color: $select-color;
@@ -44,14 +43,37 @@
     }
     .closeButton {
       display: block;
+      position: relative;
       margin: 0 auto;
       margin-top: 0.5rem;
       width: 40px;
       height: 40px;
+      line-height: 40px;
       border-radius: 5px;
       background-color: rgba(black,0.3);
-      &:hover {
-        background-color: black;
+      &:before, &:after {
+          $width: 39px;
+          $height: 10px;
+          transform: rotate(-45deg);
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -$height/2;
+          margin-left: -$width/2;
+          display: block;
+          height: $height;
+          width: $width;
+          background-color: $select-color;
+          transition: all 0.25s ease-out;
+          }
+          &:after {
+              transform: rotate(-135deg);
+          }
+          &:hover {
+            &:before, &:after {
+              transform: rotate(0deg);
+          }
         }
       }
     }
