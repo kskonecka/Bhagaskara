@@ -4,13 +4,11 @@ $width: (100% / $columns_amount);
 .grid-container {
   max-width: 1170px;
   margin: 0 auto;
-
   .row::after, .row::before {
     content: '';
     display: table;
     clear: both;
   }
-
   [class*='col-']{
     float: left;
     min-height: 1px;
@@ -18,45 +16,7 @@ $width: (100% / $columns_amount);
   @for $i from 1 through $columns_amount {
     .col-#{$i} { width: $width * $i }
   }
-
-
   .width-100 {
     width: 100%;
   }
-
-
-
-  // /* Large screens ----------- */
-  // /*some CSS*/
-  //
-  // /* Desktops and laptops ----------- */
-  // @media only screen and (max-width : 1824px) {
-  //
-  // }
-  //
-  // /* iPads (landscape) ----------- */
-  // @media only screen and (max-width : 1224px) {
-  //
-  // }
-  //
-  // /* iPads (portrait) ----------- */
-  // @media only screen and (max-width : 1024px) {
-  //
-  // }
-  //
-  // /* Smartphones (landscape) ----------- */
-  // @media only screen and (max-width : 768px) {
-  //
-  //
-  // }
-
-  // /* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
-  // @media only screen and (max-width : 640px) {
-  //
-  // }
-  //
-  // /* Smartphones (portrait) (ie: Galaxy 1) */
-  // @media only screen and (max-width : 321px) {
-  //
-  // }
 }

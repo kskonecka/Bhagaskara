@@ -367,6 +367,7 @@ input[type=button] {
   display: block;
   height: 10px;
   width: 39px;
+  border-radius: 3px;
   background-color: #9F449B;
   transition: all 0.25s ease-out;
 }
@@ -685,7 +686,7 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
 .about-us .about-us-content .about-us-right .about-us-text {
   float: right;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .about-us .about-us-content .about-us-right .about-us-button {
@@ -883,12 +884,12 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   top: 17%;
-  left: 5%;
+  left: 8%;
 }
 
 .slider-section .slider-quotes #arrow_right {
   top: 17%;
-  left: 82%;
+  right: 8%;
 }
 
 .slider-section .slider-quotes .visible-slider {
@@ -1201,20 +1202,6 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.form-section input[type=submit] {
-  background-color: #9F449B;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 15px 30px;
-  margin-left: 10px;
-  font-size: 0.75rem;
 }
 
 .form-section h4 {

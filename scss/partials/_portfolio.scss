@@ -1,17 +1,15 @@
-
 .our-portfolio {
   max-width: 1220px;
   background-color: white;
   margin: 0 auto;
   margin-top: -4rem;
-  padding-top: 6rem; //nie czy to ok
+  padding-top: 6rem;
   text-align: center;
   h1 {
     @include title();
     @include quote-marks(-20px, 80px, 100%, -85px);
   }
 }
-
 
 .portfolio-box {
   font-family: $helvetica-font;
@@ -44,7 +42,6 @@
         left: 0;
         z-index: 2;
         transition: 0.25s;
-        // padding-left: 7px; tu jak ma byc przerwa miedzy tymi gridami to nie trzeba paddingu
         &:hover {
           transition: 1s;
           opacity: 0.5;
@@ -57,11 +54,7 @@
           width: 50%;
           height: 96%;
           border-right: 2px solid silver;
-          // opacity: 0;
           transition: 1s;
-          // &:hover {
-          //   opacity: 1;
-          // }
         }
         .plus-horizontal {
           position: absolute;
@@ -70,11 +63,7 @@
           width: 100%;
           height: 50%;
           border-bottom: 2px solid silver;
-          // opacity: 0;
           transition: 1s;
-          // &:hover {
-          //   opacity: 1;
-          // }
         }
       }
       p {
@@ -94,17 +83,15 @@
     a {
       border: none;
       text-decoration: none;
-    .portfolio-watch-more-button { //ten button jest responsywny
+    .portfolio-watch-more-button {
       margin: 0 auto;
       @include button();
-      // line-height:70px;
       height: 50px;
       width: 20%;
       text-align: center;
       padding-top: 17px;
-      //chyba rozmiar czcionki/czcionke trzeba zmienic
+      //change the font-size or font-family maybe
+      }
     }
   }
-  }
 }
-//84 x 38

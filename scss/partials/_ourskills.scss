@@ -1,17 +1,9 @@
 .our-skills {
   text-align: center;
-  // padding-top: 5rem;
-  // padding-bottom: 7rem;
-  // h1 {
-  //   @include title();
-  //   @include quote-marks(-20px, 80px, 260px, -85px);
-  //
-  //   }
   .our-skills-panel-top {
-    // margin-top: 80px;
     display: flex;
     justify-content: space-between;
-    }
+  }
   .col-5 {
       @include skill-panel;
       padding-top: 1rem;
@@ -22,7 +14,7 @@
         span {
           background-color: $select-color;
           height: 100%;
-        }
       }
     }
+  }
 }

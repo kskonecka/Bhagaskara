@@ -6,15 +6,11 @@
     h1 {
       @include title();
       @include quote-marks(-20px, 80px, 100%, -85px);
-
-    // text-align: center;
-    // font-size: $h1-font-size;
-    // margin-bottom: 4rem;
-    span {
-      color: $select-color;
+      span {
+        color: $select-color;
+      }
     }
   }
-}
   form {
     input[type=text], input[type=email], textarea {
       width: 90%;
@@ -26,13 +22,13 @@
     textarea {
       height: 210px;
     }
-    input[type=submit] { //to chyba powinien byc link, bo submit sie od razu glupio styluje
+    input[type=submit] {
       @include button ();
       padding: 15px 30px;
       margin-left: 10px;
       font-size: 0.75rem;
       border: none;
-   }
+    }
   }
   .col-6 {
     .form-section-upper-text {
@@ -51,14 +47,8 @@
       justify-content: space-between;
     }
   }
-  input[type=submit] { //to chyba powinien byc link, bo submit sie od razu glupio styluje
-    @include button ();
-    padding: 15px 30px;
-    margin-left: 10px;
-    font-size: 0.75rem;
- }
- h4 {
-   @include logo(3rem);
-   padding-top: 15rem;
+  h4 {
+    @include logo(3rem);
+    padding-top: 15rem;
   }
 }

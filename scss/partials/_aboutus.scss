@@ -1,13 +1,13 @@
 .about-us {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   .about-us-title {
     text-align: center;
     padding-bottom: 2rem;
     h1 {
       @include title();
       @include quote-marks(-20px, 80px, 100%, -80px);
-      }
+    }
   }
   .about-us-content {
     display: flex;
@@ -19,22 +19,20 @@
     }
     .about-us-right {
       width: 50%;
-      margin-left: 30px; //to jest to miedzy columnami
-      .about-us-text{
+      margin-left: 30px;
+    .about-us-text{
         float: right;
         line-height: 2rem;
-        font-size: 1.5rem;
-      }
-      .about-us-button {
-        margin-top: 20px;
-        a {//czy link ma byc responsywny? niejest i glupio to wyglada
-          @include button();
-          line-height:70px;
-          padding: 15px 25px;
+        font-size: 1.25rem;
+    }
+    .about-us-button {
+      margin-top: 20px;
+      a {
+        @include button();
+        line-height:70px;
+        padding: 15px 25px;
         }
       }
     }
   }
-}
-//tu bym wolala zrobic tak zeby
-//prawa strona zmniejszala sie tak samo jak lewa
+}  

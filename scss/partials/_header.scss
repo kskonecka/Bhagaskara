@@ -2,9 +2,6 @@ body {
     font-family: 'existencelight', sans-serif;
 }
 
-
-
-
 header {
   width: 100%;
   background-image: url("../images/headerfoto.jpg");
@@ -18,7 +15,7 @@ header {
       margin: 0 auto;
       h1 {
         font-size: 4rem;
-        margin-top: 50px; //czy to ma byc w pikselach, czy jakos inaczej to opuscic
+        margin-top: 50px;
         span {
           color: $select-color;
         }

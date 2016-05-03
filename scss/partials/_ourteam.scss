@@ -1,35 +1,26 @@
 .our-team {
-  // * {
-  //   border: 1px solid $select-color;
-  // }
   padding-top: 5rem;
   padding-bottom: 1rem;
-  // border: 1px solid red;
   text-align: center;
   h1 {
     padding-bottom: 5rem;
     @include title();
     @include quote-marks(-20px, 80px, 100%, -80px);
     }
-    // .arrows {
-    //   padding-bottom: 5rem;
-    //
-    // }
-  .members-div {
-
-    .people{
-      float: none;
-      margin: 0 auto;
-      .actors {
-        font-family: $other-font-family;
-        color: #484848;
-        opacity:0.5;
-        transition: 1s;
-        .avatar {
-          float: none;
-          width: 70%;
-          margin: 0 auto;
-        }
+    .members-div {
+      .people{
+        float: none;
+        margin: 0 auto;
+        .actors {
+          font-family: $other-font-family;
+          color: #484848;
+          opacity:0.5;
+          transition: 1s;
+          .avatar {
+            float: none;
+            width: 70%;
+            margin: 0 auto;
+          }
           .name {
             padding-top:3rem;;
            // font-family: Helvetica;
@@ -50,18 +41,11 @@
                display: none;
              }
              .socialmedia {
-               img { //to sie ma tez rozciagac tak jak na dole?
+               img {
                  width: 20%;
-                 }
+                }
              }
-         }
+          }
        }
-     }
+    }
  }
-// .redford, .newman, .nolte {
-//   opacity: 0.5;
-//   transition: 1s;
-  // &:hover {
-  //   opacity: 1;
-  // }
-  // }

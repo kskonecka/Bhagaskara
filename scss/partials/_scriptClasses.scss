@@ -16,7 +16,7 @@
   transition: 0.2s;
 }
 
-
+//classes for the filter gallery in portfolio setion
 .invisible {
   visibility: hidden;
 }
@@ -25,7 +25,7 @@
     color: white;
 }
 
-//clases for the PORTFOLIO GALLERY
+//classes for the PORTFOLIO GALLERY
   .fullScreen{
     z-index: 11;
     position: fixed;
@@ -64,6 +64,7 @@
           display: block;
           height: $height;
           width: $width;
+          border-radius: 3px;
           background-color: $select-color;
           transition: all 0.25s ease-out;
           }
@@ -78,10 +79,7 @@
       }
     }
 
-.active {
-
-}
-
+//classes fot the hamburger-menu
 .hamburger-list {
   z-index: 5;
   position: absolute;
@@ -92,8 +90,6 @@
   -webkit-box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
-  // display: block;
-  // transition: 1s;
   li {
     display: block;
     a {

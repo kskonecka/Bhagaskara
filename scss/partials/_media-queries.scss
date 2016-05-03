@@ -5,7 +5,7 @@
   // html{
   //   font-size: 8px;}
   .hide-mobile {//section in header
-      display: none !important;
+    display: none !important;
   }
   .sticky {
     -webkit-box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.75);
@@ -14,27 +14,27 @@
   }
   .blue-background {//section one
     .grid-container{
-    .col-3 {
-      width: 100%;
-      float: none;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding-bottom: 10px;
-      svg {
-        display: inline-block;
-        width: 40% ;
-      }
-      .mobile-inline-block {
-        display: inline-block;
-        width: 58%;
-        align-self: center;
-        h2 {
-          min-height: 0;
-          padding-top: 0;
+      .col-3 {
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        svg {
+          display: inline-block;
+          width: 40% ;
+        }
+        .mobile-inline-block {
+          display: inline-block;
+          width: 58%;
+          align-self: center;
+          h2 {
+            min-height: 0;
+            padding-top: 0;
+          }
         }
       }
-    }
     }
   }
   .about-us{//about us
@@ -57,10 +57,10 @@
       .about-us-text {
         font-size: 1.25rem;
         text-align: justify;
+        }
       }
     }
   }
-}
   .intersection {
     h1 {
       font-size: $mobile-intersection-font-size;
@@ -72,17 +72,16 @@
     }
     .members-div {
       .people {
-      .actors {
-        opacity: 1;
-        width: 100%;
-        height: 85vh;
-        .avatar {
-          width: 50%;
-        }
-        .name {
-          padding-top: 15px;
-        }
-
+        .actors {
+          opacity: 1;
+          width: 100%;
+          height: 85vh;
+          .avatar {
+            width: 50%;
+          }
+          .name {
+            padding-top: 15px;
+          }
           .show-mobile-redford {
             display: block;
             div {
@@ -101,210 +100,80 @@
               @include mobile-skill-panels(85%, 90%, 85%, 70%);
             }
           }
-
-        .socialmedia {
-          img {
-            padding-top: 10px;
-            width: 10%;
+          .socialmedia {
+            img {
+              padding-top: 10px;
+              width: 10%;
+              }
+            }
           }
         }
       }
-    }
-  }
-} //end of our-team
-  .our-skills {
-    display: none;
-  }//end of our-skills
-  .slider-section {
-    .slider-numbers {
-      p {
-        span {
-          font-size: 1.5rem;
-        }
-      }
-    }
-    .slider-quotes {
-      #arrow_left, #arrow_right {
-        width: 10%;
-        top: 0;
-      }
-      #arrow_right {
-        left:85%;
-      }
-      .visible-slider {
-        ul {
-          li {
-            // p {
-            //   padding-left: 1rem;
-            //   padding-right: 1rem;
-            // }
-          }
-        }
-      }
-    }
-  }
-  .our-portfolio {
-    h1 {
-      font-size: 3rem;
-    }
-  }
-  .portfolio-box {
-    .mobile-hide {
+    } //end of our-team
+    .our-skills {
       display: none;
-    }
-    .portfolio-photos-top, .portfolio-photos-bottom {
-      div.col-4 {
+      }//end of our-skills
+    .slider-section {
+      .slider-numbers {
         p {
-          font-size: 0.8rem;
+          span {
+            font-size: 1.5rem;
+          }
         }
       }
+      .slider-quotes {
+        #arrow_left, #arrow_right {
+          width: 10%;
+          top: 0;
+         }
+         #arrow_right {
+          left:85%;
+         }
+       }
      }
-    .portfolio-watch-more {
-      a {
-        .portfolio-watch-more-button {
-          // padding-top: 10px; to dla jeszcze wezszego
-          width: 35%;
+     .our-portfolio {
+       h1 {
+         font-size: 3rem;
+       }
+     }
+     .portfolio-box {
+       .mobile-hide {
+         display: none;
+       }
+      .portfolio-photos-top, .portfolio-photos-bottom {
+        div.col-4 {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .portfolio-watch-more {
+        a {
+          .portfolio-watch-more-button {
+          // padding-top: 10px; for even slimmer button
+            width: 35%;
+          }
+        }
+      }
+    }
+    .form-section {
+      [class*='col-'] {
+        width: 100%;
+        float: none;
+        padding-bottom: 1rem;
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .col-6{
+        .form-section-upper-text, .form-section-address, ul {
+          padding: 20px 10px;
+          text-align: justify;
+        }
+        ul {
+          width: 100%;
+          justify-content: center;
         }
       }
     }
   }
-  .form-section {
-    [class*='col-'] {
-      width: 100%;
-      float: none;
-      padding-bottom: 1rem;
-        h1 {
-        font-size: 3rem;
-      }
-    }
-    .col-6{
-    .form-section-upper-text, .form-section-address, ul {
-      padding: 20px 10px;
-      text-align: justify;
-    }
-    ul {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// breakpoints;
-$tablet-width: 1224px;
-$phone-width: 768px;
-$small-phone: 321px;
-
-@mixin tablet-portrait {
-  @media only screen
-    and (max-width: #{$tablet-width})
-    and (orientation: portrait){
-    @content;
-  }
-}
-@mixin tablet-landscape {
-  @media only screen
-    and (max-width: #{$tablet-width})
-    and (orientation: landscape){
-    @content;
-  }
-}
-@mixin phone-portrait {
-  @media only screen
-    and (max-width: #{$phone-width})
-    and (orientation: portrait){
-    @content;
-  }
-}
-@mixin phone-landscape {
-  @media only screen
-    and (max-width: #{$phone-width})
-    and (orientation: landscape){
-    @content;
-  }
-}
-@mixin small-phone {
-  @media only screen
-    and (max-width: #{$small-phone}){
-    @content;
-  }
-}
-
-// images; $source is a STRING type, $height: pixels or em;
-
-@mixin retina($source) {
-  @media
-   only screen and (-webkit-min-device-pixel-ratio: 2),
-   only screen and (min-resolution: 2dppx) {
-     background-image: url($source);
-   }
-}
-
-@mixin tablet-portrait-img ($source, $height){
-  @media only screen
-    and (max-width: #{$tablet-width})
-    and (orientation: landscape){
-    height: $height;
-    background-image: url($source);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-  }
-}
-@mixin tablet-landscape-img ($source, $height){
-  @media only screen
-    and (max-width: #{$tablet-width})
-    and (orientation: landscape){
-    height: $height;
-    background-image: url($source);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-  }
-}
-@mixin phone-portrait-img ($source, $height){
-  @media only screen
-    and (max-width: #{$phone-width})
-    and (orientation: portrait){
-    height: $height;
-    background-image: url($source);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-  }
-}
-@mixin phone-landscape-img ($source, $height){
-  @media only screen
-    and (max-width: #{$phone-width})
-    and (orientation: landscape){
-    height: $height;
-    background-image: url($source);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-  }
-}
-@mixin small-phone-img ($source, $height){
-  @media only screen and (max-width: #{$small-smartphone}){
-    height: $height;
-    background-image: url($source);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-  }
-}
