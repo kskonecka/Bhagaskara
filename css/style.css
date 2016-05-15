@@ -773,6 +773,7 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
   color: #484848;
   opacity: 0.5;
   transition: 1s;
+  cursor: pointer;
 }
 
 .our-team .members-div .people .actors .avatar {
@@ -876,6 +877,7 @@ nav .grid-container .nav .nav-menu #hamburger.open span:nth-child(4) {
 .slider-section .slider-quotes #arrow_left, .slider-section .slider-quotes #arrow_right {
   position: absolute;
   z-index: 1;
+  cursor: pointer;
 }
 
 .slider-section .slider-quotes #arrow_left {
